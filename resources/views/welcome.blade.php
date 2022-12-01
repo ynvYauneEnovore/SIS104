@@ -10,7 +10,10 @@
 * Description : Bienvenida.
 *============================================================================
 */
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
@@ -21,7 +24,7 @@
    		 <link rel="icon" href=" {{ url('img/diente.png') }} " type="image/icon type">
 
 		<link rel="stylesheet" type="text/css" href="{{ url('css/botn-fijo.css')}}">
-        		<link rel="stylesheet" type="text/css" href="{{ url('css/video.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url('css/video.css')}}">
 
 		<!--
  <style>
@@ -30,7 +33,7 @@
         background-size: cover;
       }
 </style>
-        -->
+        --> 
  
   
 
@@ -41,9 +44,10 @@
             
             
         
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(45deg, #3c4f5e 0, #002d45 50%, #000c2d 100%);">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
       <div class="container">
-      <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="120" height="80">
+       
+      <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="95" height="60">
         <button
           class="navbar-toggler"
           type="button"
@@ -114,7 +118,7 @@
     </div>
         
       <div class="video-fondo">
-        <video src=" {{ url('video/1.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
+        <video src=" {{ url('video/3.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
             
             </video>
           
@@ -132,6 +136,5 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
     </body>
 </html>

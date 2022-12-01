@@ -23,9 +23,9 @@
 	</head>
 	<body> 
         
-<nav class="navbar fixed-top navbar-expand-lg navbar-wight p-md-2" 
-     style="background-image: linear-gradient(225deg, #67665f 0, #63645b 7.14%, #5e6157 14.29%, #575e52 21.43%, #505b4d 28.57%, #475848 35.71%, #3c5344 42.86%, #2f4f40 50%, #204a3d 57.14%, #0b463c 64.29%, #00423c 71.43%, #003f3d 78.57%, #003c3f 85.71%, #003942 92.86%, #003645 100%);">
-      
+<nav class="navbar fixed-top navbar-expand-lg navbar-wight p-md-2 " 
+     style="background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);">
+   
         <ul class="nav nav-pills">
        
             
@@ -57,7 +57,9 @@
     </li>
   </ul>
 </nav>
-        <br><br>
+        <br><br>  
+        
+  
         
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
   <h4 id="scrollspyHeading1"></h4>

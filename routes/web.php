@@ -41,6 +41,40 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/consultasexternas', function () {
+        return view('consultasexternas');
+    })->name('consultasexternas');
+});
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/compras', function () {
+        return view('compras');
+    })->name('compras');
+});
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/tienda', function () {
+        return view('tienda');
+    })->name('tienda');
+});
+
+
+
 Route::get('loginodonto', function(){
 	return view('Auth/loginodonto');
 });

@@ -13,7 +13,19 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Historia Clínica') }}
+                    </x-jet-nav-link>
+                    
+                     <x-jet-nav-link href="{{ route('consultasexternas') }}" :active="request()->routeIs('consultasexternas')">
+                        {{ __('Consultas externas') }}
+                    </x-jet-nav-link>
+                    
+                     <x-jet-nav-link href="{{ route('compras') }}" :active="request()->routeIs('compras')">
+                        {{ __('Compras') }}
+                    </x-jet-nav-link>
+                    
+                     <x-jet-nav-link href="{{ route('tienda') }}" :active="request()->routeIs('tienda')">
+                        {{ __('Tienda') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -75,7 +87,11 @@
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                                 <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
-                                    <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                                    @if (Auth::user()->profile_photo_path)
+                                        <img class="h-8 w-8 rounded-full object-cover" src="/storage/{{Auth::user()->profile_photo_path }}" alt="{{ Auth::user()->name }}" />
+                                    @else
+                                        <img class="h-8 w-8 rounded-full object-cover" src="{{Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" /> 
+                                    @endif
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
@@ -147,7 +163,11 @@
             <div class="flex items-center px-4">
                 @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                     <div class="shrink-0 mr-3">
-                        <img class="h-10 w-10 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                        @if (Auth::user()->profile_photo_path)
+                                        <img class="h-8 w-8 rounded-full object-cover" src="/storage/{{Auth::user()->profile_photo_path }}" alt="{{ Auth::user()->name }}" />
+                                    @else
+                                        <img class="h-8 w-8 rounded-full object-cover" src="{{Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" /> 
+                        @endif
                     </div>
                 @endif
 

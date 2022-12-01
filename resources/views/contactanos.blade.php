@@ -30,7 +30,7 @@
     
 	<body> 
         <!-- Navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark opacity-90">
       <div class="container">
       <img src="{{url('img/logo.png')}}" alt="Bootstrap" width="68" height="45">
         <button
