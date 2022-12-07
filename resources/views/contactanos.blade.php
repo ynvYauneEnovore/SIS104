@@ -6,8 +6,8 @@
 * Copyright   : VANCLAMA Ⓒ 2022
 * Description : Bienvenida.
 *============================================================================
-*/
-?>
+*/?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>

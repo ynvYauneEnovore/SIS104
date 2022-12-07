@@ -1,3 +1,14 @@
+<?/**
+*============================================================================
+* Name        : welcome
+* Author      : Yovan Y. enovore
+* Version     : 1.01
+* Copyright   : VANCLAMA Ⓒ 2022
+* Description : Bienvenida.
+*============================================================================
+*/?>
+
+
 <x-guest-layout>
     <div class="pt-4 bg-gray-100">
         <div class="min-h-screen flex flex-col items-center pt-6 sm:pt-0">
