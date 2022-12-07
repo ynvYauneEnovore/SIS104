@@ -119,7 +119,7 @@
     </div>
         
       <div class="video-fondo">
-        <video src=" {{ url('video/2.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
+        <video src=" {{ url('video/1.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
             
             </video>
           

@@ -43,10 +43,10 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white bg-primary" href=" {{ url('/') }} ">Inicio</a>
+              <a class="nav-link text-white" href=" {{ url('/') }} ">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href=" {{ url('servis') }} ">Servicios</a>
+              <a class="nav-link text-white bg-primary" href=" {{ url('servis') }} ">Servicios</a>
             </li>
             <li class="nav-item">
                 
@@ -69,313 +69,88 @@
       </div>
     </nav>
      <!-- Navbar  -->
+     
 <br><br><br><br>
-     <!-- scroll  -->
-<div class="row">
-  <div class="col-4">
-    <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-    </div>
-  </div>
-  <div class="col-8">
-    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-      <h4 id="list-item-1">Item 1</h4>
-      <p>...</p>
-      <h4 id="list-item-2">Item 2</h4>
-      <p>...</p>
-      <h4 id="list-item-3">Item 3</h4>
-      <p>...</p>
-      <h4 id="list-item-4">Item 4</h4>
-      <p>...</p>
-    </div>
-  </div>
-</div>
+
+
 <!-- scroll  -->
 
 
-            <li class="nav-item">
-        <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="75" height="50">
+<div class="row">
+  <div class="col-2">
+    <div class="col-2 fixed-top top-0 start-0">
+      <br><br><br><br>
+    <div id="list-example" class="list-group text-center">
+    
+      <a class="list-group-item list-group-item-action" href="#list-item-1">
+        <img src="{{url('img/logo-diente.png')}}" alt="YNV@vanclama" width="30" height="30">
+      Servicios</a>
+      <nav class="nav nav-pills flex-column">
+          <a class="nav-link link-success ms-3 my-1" href="#list-item-1-1">Habilitado</a>
+          <a class="nav-link link-secondary ms-3 my-1" href="#list-item-1-2">Inabilitado</a>
+          <a class="nav-link link-warnig ms-3 my-1" href="#list-item-1-3">muy pronto</a>
+        </nav>
 
-    </li>
-          <li class="nav-item">
-                
-            </li>
-            
-             <li class="nav-item">
-      <a class="nav-link link-wight" href=" {{ url('/') }} ">Inicio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-withe" href="#scrollspyHeading1">Odontologicos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-withe" href="#scrollspyHeading2">Micro / Servicios</a>
-    </li>
-       <li class="nav-item">
-      <a class="nav-link link-withe" href="#scrollspyHeading3">Oftalmologicos</a>
-    </li>
-       <li class="nav-item">
-      <a class="nav-link link-wight" href="#scrollspyHeading4">Micro / Servicios</a>
-    </li>
-       <li class="nav-item">
-      <a class="nav-link link-wight" href=" {{ url('/nosotros') }} ">Nosotros</a>
-    </li>
-  </ul>
-</nav>
-        <br><br>  
-        
-  
-        
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
-  <h4 id="scrollspyHeading1"></h4>
-  <!--corrusel-->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src=" {{ url('img/carrusel/1-d.png') }} " class="d-block w-100" alt="YNV©2022">
-    </div>
-    <div class="carousel-item">
-      <img src=" {{ url('img/carrusel/2-d.png') }} " class="d-block w-100" alt="YNV©2022">
-    </div>
-    <div class="carousel-item">
-      <img src=" {{ url('img/carrusel/3-d.png') }} " class="d-block w-100" alt="YNV©2022">
-    </div>
-      <div class="carousel-item">
-      <img src=" {{ url('img/carrusel/4-d.png') }} " class="d-block w-100" alt="YNV©2022">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</div>
-         <!--corrusel-->
-  <h1 id="scrollspyHeading2"><br>
-      Micro - Servicios</h1>
-    <div class="bg-success p-2 text-dark bg-opacity-50">
-        <h5>
-            Servicios Activos
-        </h5>
-        </div>
-
-      <!--targetas-->
-<div class="row row-cols-1 row-cols-md-3 g-1">
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/1.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Agenda</h5>
-        <p class="card-text">Agenda hoy y despreocupate, nuestro sistema te notificara 
-          dias, horas o minutos dependindo de la configuración que elijas.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Última actualización hace 2 días</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/2.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Servicio de notificación</h5>
-        <p class="card-text">Configura los recordatorios de tus citas de una manera fácil e
-            intuitiva.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Última actualización hace 1 días</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/3.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Curiosidades</h5>
-        <p class="card-text">Es importante tener en cuenta el cuidade de nuestros dientes ya que 
-            no se pueden recuperar de manera natural.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Última actualización hace 4 días</small>
-      </div>
-    </div>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Servicios</a>
+      <nav class="nav nav-pills flex-column">
+          <a class="nav-link link-success ms-3 my-1" href="#list-item-2-1">Habilitado</a>
+          <a class="nav-link link-secondary ms-3 my-1" href="#list-item-2-2">Inabilitado</a>
+          <a class="nav-link link-warnig ms-3 my-1" href="#list-item-2-3">muy pronto</a>
+        </nav>
   </div>
 </div>
-    <br>
-        <!--targetas-->
-    
-    <div class="bg-info p-2 text-dark bg-opacity-50">
-        <h5>Muy pronto . . . 
-        </h5>
-            </div>
-
-      <!--targetas-->
-<div class="row row-cols-1 row-cols-md-3 g-1">
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/1.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/2.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/3.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
 </div>
-        <!--targetas-->
-    
-    
-    
-  <h4 id="scrollspyHeading3">Third heading</h4>
-  
-            <!--corrusel-->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+
+  <div class="col-10">
+
+  <div class="card">
+  <img src="{{url('img/servicio-odonto.png')}}" class="card-img" alt="...">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="{{ url('img/carrusel/1-o.png') }}" class="d-block w-100" alt="...">
+      <img src="{{url('img/carrusel/1-d.png')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="{{ url('img/carrusel/2-o.png') }}" class="d-block w-100" alt="...">
+      <img src="{{url('img/carrusel/2-d.png')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="{{ url('img/carrusel/3-o.png') }}" class="d-block w-100" alt="...">
-    </div>
-      
-       <div class="carousel-item">
-      <img src="{{ url('img/carrusel/4-o.png') }}" class="d-block w-100" alt="...">
+      <img src="{{url('img/carrusel/3-d.png')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden"><span class="badge text-bg-primary">Anterior</span></span>
+    <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-         <!--corrusel-->
-    
-  <h4 id="scrollspyHeading4">Fourth heading</h4>
-    
-      <!--targetas-->
-<div class="row row-cols-1 row-cols-md-3 g-1">
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/1.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
   </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/2.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src=" {{ url('img/targeta/3.png') }} " class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-</div>
-        <!--targetas-->
-    
-</div>
-        
-        <!--
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark">
-      <div class="container">
-      <img src="{{url('img/logo.png')}}" alt="Bootstrap" width="68" height="45">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href=" {{ url('/') }} ">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white bg-primary" href=" {{ url('servis') }} ">Servicios</a>
-            </li>
-             
-            <li class="nav-item">
-                
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href=" {{ url('nosotros') }} ">Nosotros</a>
-            </li>
-	<li class="nav-item">
-              <a class="nav-link text-white" href=" {{ url('contactanos') }} ">Contáctanos</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  </div>
 
-        -->
-    <!-- Banner Image
-    <div class="banner-image w-80 vh-100 d-flex justify-content-center align-items-center">
-    </div>
-    -->
+</div>
+
+     
 <!-- footer -->
 <footer class="text-center text-white">
   <!-- Copyright -->

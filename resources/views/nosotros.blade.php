@@ -28,9 +28,11 @@
 
 	</head>
 	<body> <!-- Navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark">
+     <!-- Navbar  -->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
       <div class="container">
-      <img src="{{url('img/logo.png')}}" alt="Bootstrap" width="68" height="45">
+       
+      <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="95" height="60">
         <button
           class="navbar-toggler"
           type="button"
@@ -50,21 +52,27 @@
             <li class="nav-item">
               <a class="nav-link text-white" href=" {{ url('servis') }} ">Servicios</a>
             </li>
-             
             <li class="nav-item">
                 
             </li>
             <li class="nav-item">
               <a class="nav-link text-white bg-primary" href=" {{ url('nosotros') }} ">Nosotros</a>
             </li>
-	<li class="nav-item">
+	       <li class="nav-item">
               <a class="nav-link text-white" href=" {{ url('contactanos') }} ">Contáctanos</a>
             </li>
+              <li class="nav-item">
+                    
+              </li>
+              
+              <li class="nav-item">
+                  <button onclick="location.href = '{{ route('register') }}'" type="button" class="btn btn-success">Registrarse</button> 
+              </li>
           </ul>
         </div>
       </div>
     </nav>
-
+     <!-- Navbar  -->
     <!-- Banner Image  
     <div class="banner-image w-80 vh-100 d-flex justify-content-center align-items-center">
     </div>
