@@ -1,7 +1,7 @@
 <?/**
 *============================================================================
 * Name        : welcome
-* Author      : Yovan Y. enovore
+* Author      : Yovan Y. Enovore
 *               2
 *               3
 *               4
@@ -24,12 +24,78 @@
 	</head>
 	<body> 
         
-<nav class="navbar fixed-top navbar-expand-lg navbar-wight p-md-2 " 
-     style="background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);">
-   
-        <ul class="nav nav-pills">
+ <!-- Navbar  -->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+      <div class="container">
        
-            
+      <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="95" height="60">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white bg-primary" href=" {{ url('/') }} ">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href=" {{ url('servis') }} ">Servicios</a>
+            </li>
+            <li class="nav-item">
+                
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href=" {{ url('nosotros') }} ">Nosotros</a>
+            </li>
+	       <li class="nav-item">
+              <a class="nav-link text-white" href=" {{ url('contactanos') }} ">Contáctanos</a>
+            </li>
+              <li class="nav-item">
+                    
+              </li>
+              
+              <li class="nav-item">
+                  <button onclick="location.href = '{{ route('register') }}'" type="button" class="btn btn-success">Registrarse</button> 
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <!-- Navbar  -->
+<br><br><br><br>
+     <!-- scroll  -->
+<div class="row">
+  <div class="col-4">
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h4 id="list-item-1">Item 1</h4>
+      <p>...</p>
+      <h4 id="list-item-2">Item 2</h4>
+      <p>...</p>
+      <h4 id="list-item-3">Item 3</h4>
+      <p>...</p>
+      <h4 id="list-item-4">Item 4</h4>
+      <p>...</p>
+    </div>
+  </div>
+</div>
+<!-- scroll  -->
+
+
             <li class="nav-item">
         <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="75" height="50">
 

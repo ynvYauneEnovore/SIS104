@@ -39,12 +39,12 @@
 
 
 	</head>
-	<body> <!-- Navbar  -->
-        
-            
-            
-        
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+	<body> 
+    
+  
+  
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
       <div class="container">
        
       <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="95" height="60">
@@ -87,6 +87,7 @@
         </div>
       </div>
     </nav>
+     <!-- Navbar  -->
 
     <!-- Banner Image  -->
         <div class="banner-image w-80 vh-100 d-flex justify-content-center align-items-center">
@@ -118,7 +119,7 @@
     </div>
         
       <div class="video-fondo">
-        <video src=" {{ url('video/3.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
+        <video src=" {{ url('video/2.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
             
             </video>
           
