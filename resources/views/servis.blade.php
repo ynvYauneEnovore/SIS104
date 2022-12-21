@@ -82,7 +82,7 @@
       <br><br><br><br>
     <div id="list-example" class="list-group text-center">
     
-      <a class="list-group-item list-group-item-action" href="#list-item-1">
+      <a class="list-group-item list-group-item-action" href="#item-1">
         <img src="{{url('img/logo-diente.png')}}" alt="YNV@vanclama" width="30" height="30">
       Servicios</a>
       <nav class="nav nav-pills flex-column">
@@ -91,7 +91,7 @@
           <a class="nav-link link-warnig ms-3 my-1" href="#list-item-1-3">muy pronto</a>
         </nav>
 
-        <a class="list-group-item list-group-item-action" href="#list-item-2">Servicios</a>
+        <a class="list-group-item list-group-item-action" href="#item-2">Servicios</a>
       <nav class="nav nav-pills flex-column">
           <a class="nav-link link-success ms-3 my-1" href="#list-item-2-1">Habilitado</a>
           <a class="nav-link link-secondary ms-3 my-1" href="#list-item-2-2">Inabilitado</a>
@@ -101,53 +101,62 @@
 </div>
 </div>
 
-
-  <div class="col-10">
-
-  <div class="card">
-  <img src="{{url('img/servicio-odonto.png')}}" class="card-img" alt="...">
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+<div class="col-10">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+ 
+  <div href="item-1">
+<h2>1</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="{{url('img/carrusel/1-d.png')}}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="{{url('img/carrusel/2-d.png')}}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
+    <div class="carousel-item active">
+      <img src=" {{ url('/img/servicio-odonto.png') }} " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="{{url('img/carrusel/3-d.png')}}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+      <img src=" {{ url('/img/carrusel/5-d.png') }} " class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=" {{ url('/img/carrusel/3-d.png') }} " class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
+
+
+<div href="item-2">
+<h2>2</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=" {{ url('/img/servicio-odonto.png') }} " class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=" {{ url('/img/carrusel/5-d.png') }} " class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=" {{ url('/img/carrusel/3-d.png') }} " class="d-block w-100" alt="...">
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
 
   </div>
-
+  </div>
 </div>
 
      
