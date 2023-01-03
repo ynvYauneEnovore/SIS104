@@ -1,4 +1,4 @@
-<?/**
+<?php/**
 *============================================================================
 * Name        : welcome
 * Author      : Yovan Y. enovore
@@ -26,14 +26,14 @@
 		<link rel="stylesheet" type="text/css" href="{{ url('css/botn-fijo.css')}}">
         <link rel="stylesheet" type="text/css" href="{{ url('css/video.css')}}">
 
-		<!--
+
  <style>
       .banner-image {
         background-image: url('img/fondo.png');
         background-size: cover;
       }
 </style>
-        --> 
+    
  
   
 
@@ -117,13 +117,15 @@
   </div>
 </div>
     </div>
-        
-      <div class="video-fondo">
-        <video src=" {{ url('video/1.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
-            
-            </video>
-          
-        </div>
+       
+      <?php
+      /**
+      *<div class="video-fondo">
+      *  <video src=" {{ url('video/1.mp4') }} " autoplay="true" muted="true" loop="true" poster="">
+      *  </video>
+      *</div>
+      */
+      ?>
         
 <footer class="text-center text-white">
   <!-- Copyright -->
