@@ -8,8 +8,16 @@
 *============================================================================
 */
 ?>
-
-<x-guest-layout>
+ <style>
+      .banner-image {
+        background-image: url('img/fondo.png');
+        background-size: cover;
+      }
+</style>
+    
+<div class="banner-image w-80 vh-100 d-flex justify-content-center align-items-center">
+    
+    <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-logoodonto/>
@@ -58,4 +66,8 @@
     </x-jet-authentication-card>
 </x-guest-layout>
 
+
+
+    
+    </div>
 

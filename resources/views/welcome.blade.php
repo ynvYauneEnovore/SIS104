@@ -65,14 +65,15 @@
               <a class="nav-link text-white bg-primary" href=" {{ url('/') }} ">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href=" {{ url('servis') }} ">Servicios</a>
+                 <button onclick="location.href = '{{ route('register') }}'" type="button" class="btn btn-link" disabled>Nosotros</button>
+            </li>
+               <li class="nav-item">
+              <button onclick="location.href = '{{ route('register') }}'" type="button" class="btn btn-link" disabled>Servicios</button>
             </li>
             <li class="nav-item">
                 
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href=" {{ url('nosotros') }} ">Nosotros</a>
-            </li>
+        
 	       <li class="nav-item">
               <a class="nav-link text-white" href=" {{ url('contactanos') }} ">Contáctanos</a>
             </li>
@@ -81,7 +82,7 @@
               </li>
               
               <li class="nav-item">
-                  <button onclick="location.href = '{{ route('register') }}'" type="button" class="btn btn-success">Registrarse</button> 
+                  <button onclick="location.href = '{{ route('register') }}'" type="button" class="btn btn-success" >Registrarse</button> 
               </li>
           </ul>
         </div>
