@@ -453,7 +453,7 @@
 <footer class="text-center text-white">
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: #000203;">
-    Clínica - VANCLAMA © 2022 Todos los derechos reservados.
+    Clínica - VANCLAMA © 2023 Todos los derechos reservados.
   </div>
   <!-- Copyright -->
 </footer>
