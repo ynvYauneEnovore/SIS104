@@ -20,12 +20,58 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                <div class="container ">
+                   <br>
 	       	    <div class="row">
 		    		    <div class="col-6">
-		    	welcome
-		    </div>
+		    	<h1 class="text-center">
+                    Información Personal del Paciente
+                </h1>
+                <div class="conteiner text-center">
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                <img class="h-100 w-100 rounded-full object-cover" src="{{Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" /> 
+
+                        </div>
+                        <div class="col">
+                            <h1>Datos del Cliente</h1>
+                            <br>
+                            <div>
+                             <h3>Nombre</h3>
+                            <h3>Ap. Paterno:</h3>
+                            <h3>Ap. MAterno:i</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		                  </div>
                     	    <div class="col-6">
-		    	welcome
+		    	
+                  <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('Historial') }}
+                    </x-jet-nav-link>
+                    
+                     <x-jet-nav-link href="{{ route('consultasexternas') }}" :active="request()->routeIs('consultasexternas')">
+                        {{ __('Laboratorio') }}
+                    </x-jet-nav-link>
+                    
+                     <x-jet-nav-link href="{{ route('compras') }}" :active="request()->routeIs('compras')">
+                        {{ __('Vacunas') }}
+                    </x-jet-nav-link>
+                    
+                     <x-jet-nav-link href="{{ route('tienda') }}" :active="request()->routeIs('tienda')">
+                        {{ __('Episodios') }}
+                    </x-jet-nav-link>
+                    
+                    
+                    <x-jet-nav-link href="{{ route('tienda') }}" :active="request()->routeIs('tienda')">
+                        {{ __('Imagenes') }}
+                    </x-jet-nav-link>
+                </div>
+                                
+                                
 		    </div>
 		    </div>
 	       </div>

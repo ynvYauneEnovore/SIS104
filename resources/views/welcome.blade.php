@@ -33,9 +33,7 @@
         background-size: cover;
       }
 </style>
-    
- 
-  
+   
 
 
 	</head>
@@ -47,7 +45,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 bg-dark" style="background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
       <div class="container">
        
-      <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="95" height="60">
+      <img src="{{url('img/logo.png')}}" alt="YNV@vanclama" width="80" height="70">
         <button
           class="navbar-toggler"
           type="button"
@@ -89,6 +87,10 @@
       </div>
     </nav>
      <!-- Navbar  -->
+
+
+<div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+
 
     <!-- Banner Image  -->
         <div class="banner-image w-80 vh-100 d-flex justify-content-center align-items-center">
